@@ -48,7 +48,7 @@ def chat_with_users(message):
 while True:
     try:
         print("🚀 Bot is running with AI...")
-        bot.infinity_polling(timeout=10, long_polling_timeout=5)
+        bot.infinity_polling(timeout=3, long_polling_timeout=3)
     except Exception as e:
         print(f"⚠️ Bot crashed: {e}")
         time.sleep(5)  # Wait before restarting
